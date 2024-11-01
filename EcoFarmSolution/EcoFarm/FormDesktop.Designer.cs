@@ -1,6 +1,6 @@
 ﻿namespace EcoFarm
 {
-    partial class Form1
+    partial class FormDesktop
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // Form1
+            // FormDesktop
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1139, 659);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormDesktop";
+            Text = "EcoFarm";
             ResumeLayout(false);
         }
 

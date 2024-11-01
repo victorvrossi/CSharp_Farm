@@ -1,8 +1,8 @@
 namespace EcoFarm
 {
-    public partial class Form1 : Form
+    public partial class FormDesktop : Form
     {
-        public Form1()
+        public FormDesktop()
         {
             InitializeComponent();
         }
