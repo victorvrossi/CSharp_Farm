@@ -17,14 +17,15 @@ namespace EcoFarm
         public FormGerenciarProduto()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            tabProdutos.SelectedIndex = 0;
             ListaProdutoBean bean = new ListaProdutoBean();
+            tabProdutos.SelectedIndex = 0;
             bean.ControleTabela = tableProdutoLista.Controls;
+
             bean.adicionarProduto(txNome.Text, txDescricao.Text, txValor.Text);
             bean.gerarTabela();
         }

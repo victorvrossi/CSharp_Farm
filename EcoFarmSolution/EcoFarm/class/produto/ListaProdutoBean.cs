@@ -9,7 +9,7 @@ namespace EcoFarm.@class.produto
     public class ListaProdutoBean
     {
         List<ItemListaProduto> listaProdutos = new List<ItemListaProduto>();
-        TableLayoutControlCollection controlTabelaProdutoItem;
+        private TableLayoutControlCollection controlTabelaProdutoItem = null;
 
         public TableLayoutControlCollection ControleTabela { set { this.controlTabelaProdutoItem = value; } }
 
@@ -26,6 +26,14 @@ namespace EcoFarm.@class.produto
         public void gerarTabela()
         {
             int countItens = 0;
+            if(listaProdutos.Count < 1) {
+                ItemListaProduto produto = new ItemListaProduto();
+                produto.Nome = "Nenhum item adicionado";
+                controlTabelaProdutoItem.Add(injetarForm(produto), 0, countItens++);
+                return;
+            }
+
+            controlTabelaProdutoItem.Clear();
             listaProdutos.ForEach(produto => {
                 controlTabelaProdutoItem.Add(injetarForm(produto), 0, countItens++);
             });

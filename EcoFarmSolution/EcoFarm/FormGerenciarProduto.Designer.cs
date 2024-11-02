@@ -203,6 +203,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
+            
         }
 
         #endregion
