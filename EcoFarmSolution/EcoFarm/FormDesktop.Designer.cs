@@ -28,18 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            panelDesktop = new Panel();
+            button1 = new Button();
             SuspendLayout();
+            // 
+            // panelDesktop
+            // 
+            panelDesktop.Location = new Point(326, 3);
+            panelDesktop.Name = "panelDesktop";
+            panelDesktop.Size = new Size(812, 659);
+            panelDesktop.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(90, 84);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // FormDesktop
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1139, 659);
+            Controls.Add(button1);
+            Controls.Add(panelDesktop);
             Name = "FormDesktop";
             Text = "EcoFarm";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panelDesktop;
+        private Button button1;
     }
 }
