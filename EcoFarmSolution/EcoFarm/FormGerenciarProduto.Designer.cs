@@ -32,13 +32,21 @@
             label1 = new Label();
             tabProdutos = new TabControl();
             tabPage1 = new TabPage();
+            tableProdutoLista = new TableLayoutPanel();
             tabPage2 = new TabPage();
+            panel2 = new Panel();
+            txValor = new TextBox();
+            txDescricao = new TextBox();
+            label4 = new Label();
+            label3 = new Label();
+            txNome = new TextBox();
+            label2 = new Label();
             button1 = new Button();
-            listProdutos = new ListBox();
             panel1.SuspendLayout();
             tabProdutos.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -72,7 +80,9 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(listProdutos);
+            tabPage1.AutoScroll = true;
+            tabPage1.AutoScrollMargin = new Size(50, 50);
+            tabPage1.Controls.Add(tableProdutoLista);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -81,35 +91,99 @@
             tabPage1.Text = "Lista de Produtos";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // tableProdutoLista
+            // 
+            tableProdutoLista.AutoSize = true;
+            tableProdutoLista.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableProdutoLista.Location = new Point(1, 6);
+            tableProdutoLista.Name = "tableProdutoLista";
+            tableProdutoLista.Size = new Size(903, 100);
+            tableProdutoLista.TabIndex = 0;
+            // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(panel2);
             tabPage2.Controls.Add(button1);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(888, 557);
+            tabPage2.Size = new Size(888, 455);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Cadastro de produto";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(txValor);
+            panel2.Controls.Add(txDescricao);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(txNome);
+            panel2.Controls.Add(label2);
+            panel2.Location = new Point(19, 28);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(841, 333);
+            panel2.TabIndex = 1;
+            // 
+            // txValor
+            // 
+            txValor.Location = new Point(150, 173);
+            txValor.Name = "txValor";
+            txValor.Size = new Size(362, 23);
+            txValor.TabIndex = 5;
+            // 
+            // txDescricao
+            // 
+            txDescricao.Location = new Point(150, 106);
+            txDescricao.Name = "txDescricao";
+            txDescricao.Size = new Size(362, 23);
+            txDescricao.TabIndex = 4;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(36, 176);
+            label4.Name = "label4";
+            label4.Size = new Size(33, 15);
+            label4.TabIndex = 3;
+            label4.Text = "Valor";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(36, 106);
+            label3.Name = "label3";
+            label3.Size = new Size(58, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Descrição";
+            // 
+            // txNome
+            // 
+            txNome.Location = new Point(150, 33);
+            txNome.Name = "txNome";
+            txNome.Size = new Size(362, 23);
+            txNome.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(36, 41);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 15);
+            label2.TabIndex = 0;
+            label2.Text = "Nome";
+            label2.Click += label2_Click;
+            // 
             // button1
             // 
-            button1.Location = new Point(282, 184);
+            button1.Location = new Point(29, 378);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(138, 50);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Confirmar";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // listProdutos
-            // 
-            listProdutos.FormattingEnabled = true;
-            listProdutos.ItemHeight = 15;
-            listProdutos.Location = new Point(29, 24);
-            listProdutos.Name = "listProdutos";
-            listProdutos.Size = new Size(380, 334);
-            listProdutos.TabIndex = 0;
             // 
             // FormGerenciarProduto
             // 
@@ -124,7 +198,10 @@
             panel1.PerformLayout();
             tabProdutos.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -136,6 +213,13 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private Button button1;
-        private ListBox listProdutos;
+        private TableLayoutPanel tableProdutoLista;
+        private Panel panel2;
+        private TextBox txNome;
+        private Label label2;
+        private TextBox txValor;
+        private TextBox txDescricao;
+        private Label label4;
+        private Label label3;
     }
 }

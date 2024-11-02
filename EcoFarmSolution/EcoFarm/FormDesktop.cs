@@ -1,3 +1,5 @@
+using EcoFarm.@class;
+
 namespace EcoFarm
 {
     public partial class FormDesktop : Form

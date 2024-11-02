@@ -17,3 +17,4 @@ E:\Nova pasta\CSharp_Farm\EcoFarmSolution\EcoFarm\obj\Debug\net8.0-windows\EcoFa
 E:\Nova pasta\CSharp_Farm\EcoFarmSolution\EcoFarm\obj\Debug\net8.0-windows\EcoFarm.genruntimeconfig.cache
 E:\Nova pasta\CSharp_Farm\EcoFarmSolution\EcoFarm\obj\Debug\net8.0-windows\ref\EcoFarm.dll
 E:\Nova pasta\CSharp_Farm\EcoFarmSolution\EcoFarm\obj\Debug\net8.0-windows\EcoFarm.Properties.Resources.resources
+E:\Nova pasta\CSharp_Farm\EcoFarmSolution\EcoFarm\obj\Debug\net8.0-windows\EcoFarm.FormProdutoItemLista.resources

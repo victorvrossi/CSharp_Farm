@@ -1,4 +1,4 @@
-namespace EcoFarm
+namespace EcoFarm.@class
 {
     internal static class Program
     {

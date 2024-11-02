@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoFarm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac07e707a6734d70730c4604f61a6519fd3de6be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c200a2451d403842136a5613ac2cf7e2ded88fd5")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoFarm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoFarm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

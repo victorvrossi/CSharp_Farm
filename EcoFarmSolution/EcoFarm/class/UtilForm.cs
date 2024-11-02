@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoFarm
+namespace EcoFarm.@class
 {
     public class UtilForm
     {

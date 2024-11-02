@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EcoFarm.@class;
+using EcoFarm.@class.produto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +21,17 @@ namespace EcoFarm
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             tabProdutos.SelectedIndex = 0;
+            ListaProdutoBean bean = new ListaProdutoBean();
+            bean.ControleTabela = tableProdutoLista.Controls;
+            bean.adicionarProduto(txNome.Text, txDescricao.Text, txValor.Text);
+            bean.gerarTabela();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
