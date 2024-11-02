@@ -34,8 +34,10 @@
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
             button1 = new Button();
+            listProdutos = new ListBox();
             panel1.SuspendLayout();
             tabProdutos.SuspendLayout();
+            tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,6 +72,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(listProdutos);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -84,7 +87,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(888, 455);
+            tabPage2.Size = new Size(888, 557);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Cadastro de produto";
             tabPage2.UseVisualStyleBackColor = true;
@@ -99,6 +102,15 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // listProdutos
+            // 
+            listProdutos.FormattingEnabled = true;
+            listProdutos.ItemHeight = 15;
+            listProdutos.Location = new Point(29, 24);
+            listProdutos.Name = "listProdutos";
+            listProdutos.Size = new Size(380, 334);
+            listProdutos.TabIndex = 0;
+            // 
             // FormGerenciarProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -111,6 +123,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             tabProdutos.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -123,5 +136,6 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private Button button1;
+        private ListBox listProdutos;
     }
 }
