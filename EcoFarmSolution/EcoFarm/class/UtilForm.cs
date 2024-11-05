@@ -19,8 +19,10 @@ namespace EcoFarm.@class
             filho.Dock = DockStyle.Fill;
             desktop.Controls.Add(filho);
             desktop.Tag = filho;
+            filho.ClientSize = desktop.ClientSize;
             filho.BringToFront();
             filho.Show();
+
 
         }
 

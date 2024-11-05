@@ -10,8 +10,10 @@ namespace EcoFarm.@class.produto
     {
         List<ItemListaProduto> listaProdutos = new List<ItemListaProduto>();
         private TableLayoutControlCollection controlTabelaProdutoItem = null;
+        EditarProduto editar;
 
         public TableLayoutControlCollection ControleTabela { set { this.controlTabelaProdutoItem = value; } }
+        internal EditarProduto Editar { get { return editar; } set { editar = value; } }
 
         public void adicionarProduto(String nome,String descricao, String valor)
         {
@@ -29,12 +31,13 @@ namespace EcoFarm.@class.produto
             if(listaProdutos.Count < 1) {
                 ItemListaProduto produto = new ItemListaProduto();
                 produto.Nome = "Nenhum item adicionado";
-                controlTabelaProdutoItem.Add(injetarForm(produto), 0, countItens++);
+                controlTabelaProdutoItem.Add(injetarForm(produto), 0, 0);
                 return;
             }
 
             controlTabelaProdutoItem.Clear();
             listaProdutos.ForEach(produto => {
+                produto.Codigo = countItens;
                 controlTabelaProdutoItem.Add(injetarForm(produto), 0, countItens++);
             });
             
@@ -47,6 +50,8 @@ namespace EcoFarm.@class.produto
             FormProdutoItemLista formProdutoItemLista = new FormProdutoItemLista();
             formProdutoItemLista.SetProduto(produto);
             formProdutoItemLista.SetItens();
+            formProdutoItemLista.Editar = editar;
+            //edit.abreTabEditar = selecionarTabProdutoCadastrar;            
             Panel desktop = gerarPanel(formProdutoItemLista.Width,formProdutoItemLista.Height);
             
             util.openForm(desktop, formProdutoItemLista,null);
@@ -62,5 +67,6 @@ namespace EcoFarm.@class.produto
             return panel3;
         }
 
+       
     }
 }

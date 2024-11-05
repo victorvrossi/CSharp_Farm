@@ -34,9 +34,10 @@ namespace EcoFarm
         {
             panel1 = new Panel();
             panel2 = new Panel();
-            lbNome = new Label();
-            lbDescricao = new Label();
             lbValor = new Label();
+            lbDescricao = new Label();
+            lbNome = new Label();
+            btEditar = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -54,6 +55,7 @@ namespace EcoFarm
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonHighlight;
+            panel2.Controls.Add(btEditar);
             panel2.Controls.Add(lbValor);
             panel2.Controls.Add(lbDescricao);
             panel2.Controls.Add(lbNome);
@@ -61,6 +63,26 @@ namespace EcoFarm
             panel2.Name = "panel2";
             panel2.Size = new Size(727, 100);
             panel2.TabIndex = 0;
+            // 
+            // lbValor
+            // 
+            lbValor.AutoSize = true;
+            lbValor.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbValor.Location = new Point(310, 30);
+            lbValor.Name = "lbValor";
+            lbValor.Size = new Size(78, 32);
+            lbValor.TabIndex = 2;
+            lbValor.Text = "label3";
+            // 
+            // lbDescricao
+            // 
+            lbDescricao.AutoSize = true;
+            lbDescricao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbDescricao.Location = new Point(169, 39);
+            lbDescricao.Name = "lbDescricao";
+            lbDescricao.Size = new Size(52, 21);
+            lbDescricao.TabIndex = 1;
+            lbDescricao.Text = "label2";
             // 
             // lbNome
             // 
@@ -72,25 +94,15 @@ namespace EcoFarm
             lbNome.TabIndex = 0;
             lbNome.Text = "label1";
             // 
-            // lbDescricao
+            // btEditar
             // 
-            lbDescricao.AutoSize = true;
-            lbDescricao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbDescricao.Location = new Point(243, 39);
-            lbDescricao.Name = "lbDescricao";
-            lbDescricao.Size = new Size(52, 21);
-            lbDescricao.TabIndex = 1;
-            lbDescricao.Text = "label2";
-            // 
-            // lbValor
-            // 
-            lbValor.AutoSize = true;
-            lbValor.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbValor.Location = new Point(523, 30);
-            lbValor.Name = "lbValor";
-            lbValor.Size = new Size(78, 32);
-            lbValor.TabIndex = 2;
-            lbValor.Text = "label3";
+            btEditar.Location = new Point(441, 37);
+            btEditar.Name = "btEditar";
+            btEditar.Size = new Size(75, 23);
+            btEditar.TabIndex = 3;
+            btEditar.Text = "Editar";
+            btEditar.UseVisualStyleBackColor = true;
+            btEditar.Click += btEditar_Click;
             // 
             // FormProdutoItemLista
             // 
@@ -113,5 +125,6 @@ namespace EcoFarm
         private Label lbValor;
         private Label lbDescricao;
         private Label lbNome;
+        private Button btEditar;
     }
 }

@@ -18,9 +18,5 @@ namespace EcoFarm
             util.openForm(this.panelDesktop, new FormGerenciarProduto(), null);
         }
 
-        private void FormDesktop_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

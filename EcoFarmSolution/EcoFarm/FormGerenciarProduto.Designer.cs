@@ -72,10 +72,10 @@
             // 
             tabProdutos.Controls.Add(tabPage1);
             tabProdutos.Controls.Add(tabPage2);
-            tabProdutos.Location = new Point(0, 66);
+            tabProdutos.Location = new Point(0, 93);
             tabProdutos.Name = "tabProdutos";
             tabProdutos.SelectedIndex = 0;
-            tabProdutos.Size = new Size(896, 483);
+            tabProdutos.Size = new Size(970, 484); 
             tabProdutos.TabIndex = 1;
             // 
             // tabPage1
@@ -86,7 +86,7 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(888, 455);
+            tabPage1.Size = new Size(895, 456);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Lista de Produtos";
             tabPage1.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(888, 455);
+            tabPage2.Size = new Size(895, 456);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Cadastro de produto";
             tabPage2.UseVisualStyleBackColor = true;
@@ -189,7 +189,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(898, 548);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(954, 680);
             Controls.Add(tabProdutos);
             Controls.Add(panel1);
             Name = "FormGerenciarProduto";
@@ -203,7 +204,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
-            
         }
 
         #endregion
@@ -223,4 +223,6 @@
         private Label label4;
         private Label label3;
     }
+
+    
 }

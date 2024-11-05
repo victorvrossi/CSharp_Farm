@@ -13,10 +13,10 @@ namespace EcoFarm
 {
     public partial class FormProdutoItemLista : Form
     {
+        private EditarProduto editar;
         public FormProdutoItemLista()
         {
             InitializeComponent();
-            
         }
         internal void SetItens()
         {
@@ -27,6 +27,15 @@ namespace EcoFarm
 
         ItemListaProduto produto;
 
+        internal EditarProduto Editar { get { return editar; } set { editar = value; } }
+
         internal void SetProduto(ItemListaProduto value) => this.produto = value;
+
+        private void btEditar_Click(object sender, EventArgs e)
+        {
+            editar.selecionarProdutoParaEditar(produto);
+        }
+
+
     }
 }

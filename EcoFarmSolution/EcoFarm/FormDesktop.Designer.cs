@@ -33,15 +33,21 @@
             button1 = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            panel2 = new Panel();
+            pictureBox2 = new PictureBox();
+            button2 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panelDesktop
             // 
+            panelDesktop.BackColor = SystemColors.AppWorkspace;
             panelDesktop.Location = new Point(326, 3);
             panelDesktop.Name = "panelDesktop";
-            panelDesktop.Size = new Size(812, 659);
+            panelDesktop.Size = new Size(970, 719);
             panelDesktop.TabIndex = 0;
             // 
             // button1
@@ -83,18 +89,58 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.OliveDrab;
+            panel2.Controls.Add(pictureBox2);
+            panel2.Controls.Add(button2);
+            panel2.Location = new Point(1, 89);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(319, 80);
+            panel2.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._8890229;
+            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
+            pictureBox2.Location = new Point(11, 9);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(54, 51);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.GreenYellow;
+            button2.BackgroundImageLayout = ImageLayout.None;
+            button2.FlatAppearance.BorderColor = SystemColors.ActiveCaption;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ActiveCaptionText;
+            button2.Location = new Point(71, 9);
+            button2.Margin = new Padding(0);
+            button2.Name = "button2";
+            button2.Size = new Size(230, 52);
+            button2.TabIndex = 1;
+            button2.Text = "Pessoa";
+            button2.UseVisualStyleBackColor = false;
+            // 
             // FormDesktop
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1139, 659);
+            ClientSize = new Size(1308, 734);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(panelDesktop);
             Name = "FormDesktop";
             Text = "EcoFarm";
-            Load += FormDesktop_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -104,5 +150,8 @@
         private Button button1;
         private Panel panel1;
         private PictureBox pictureBox1;
+        private Panel panel2;
+        private PictureBox pictureBox2;
+        private Button button2;
     }
 }

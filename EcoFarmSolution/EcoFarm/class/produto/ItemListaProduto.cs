@@ -11,11 +11,14 @@ namespace EcoFarm.@class.produto
         private String _nome;
         private String _descricao;
         private String _valor;
+        private int _codigo;
 
         public String Nome { get { return _nome; } set { this._nome = value; } }
 
         public String Descricao { get { return _descricao; } set { this._descricao = value; } }
 
         public String Valor { get { return _valor; } set { this._valor = value; } }
+
+        public int Codigo { get { return _codigo; } set { this._codigo = value; } }
     }
 }
