@@ -1,1 +1,1 @@
-Um projeto para explorar, aprender e decobrir sobre o C#
+Um projeto para explorar, aprender e descobrir sobre o C#
